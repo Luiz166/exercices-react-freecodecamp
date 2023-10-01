@@ -70,42 +70,10 @@
 // ReactDOM.render(<Page/>, document.getElementById("container"));
 
 //part4
-const Header = () => {
-    return (
+import Header from ".Header"
+import MainContent from "./MainContent"
+import Footer from "./Footer"
 
-        <header>
-            <nav className="navPage">
-                <img id="logo" src="https://alternative.me/media/256/react-native-icon-pb99lshx8fagxe0r-c.png" />
-                <ul className="navItems">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
-
-const MainContent = () => {
-    return (
-        <div className="main">
-            <h1>Reasons to learn React</h1>
-            <ol className="mainContent">
-                <li>Is very good</li>
-                <li>Get a job</li>
-                <li>Look's cool as fuck</li>
-            </ol>
-        </div>
-    )
-}
-
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <small>&copy; 2023 Klyuyev development. All rights reserved</small>
-        </footer>
-    )
-}
 
 const Page = () => {
     return (
