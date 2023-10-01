@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    font-family: Inter;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --navbar: #21222A;
+    --main: #282D35;
+    --secondary: #61DAFB;
+}
+
+/*nav*/
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--navbar);
+    height: 6rem;
+}
+
+.Separeted{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Separeted h2{color: var(--secondary);}
+.Separeted span{color: white;}
+
+/*Main*/
+
+.Container{
+    background-color: var(--main);
+    height: calc(100vh - 6rem);
+    color: white;
+    padding: 2rem;
+    background-image: url(./images/reactjs-icon\ 2.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
+    background-size: 22%;
+}
+
+.Container h1{
+    font-size: 3.5rem;
+}
+
+.List{
+    list-style-type: disc;
+    padding: 2rem;
+}
+
+.List li::marker{
+    color: var(--secondary);
+}
+
+.List li{font-size: 1.2rem;}
