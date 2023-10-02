@@ -1,8 +1,12 @@
 import MailIcon from "../images/Mail.svg";
+import PersonPicture from "../images/Rectangle90.png";
 
 const MainContent = () => {
     return (
         <section className="MainContent">
+            <header className="Header">
+                <img src={PersonPicture} alt="PersonPicture" />
+            </header>
             <h1>Laura Smith</h1>
             <span>Frontend Developer</span>
             <small>laurasmith.website</small>
