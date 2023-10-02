@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    font-family: Inter;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --background-page: #23252C;
+    --background-main-content: #1A1B21;
+    --background-footer: #161619;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: var(--background-page);
+}
+
+.Container{
+    margin: 0 auto;
+    width: 30rem;
+}
+
+.Header img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.MainContent{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-main-content);
+    color: white;
+    padding: 3rem;
+}
+
+.MainContent h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.MainContent span{text-align: center; color: #F3BF99;}
+
+.MainContent small{text-align: center; display: block; margin-top: 1rem;}
+
+.MainContent a{
+    text-decoration: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 0 auto;
+    color: var(--background-main-content);
+    padding: .5rem;
+    width: 22rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.About{
+    margin-top: 1rem;
+}
+
+.Interests{
+    margin-top: 1rem;
+}
+
+.MainContent p{font-size: .9rem; margin-top: .5rem;}
+
+.Footer{
+    background-color: var(--background-footer);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
