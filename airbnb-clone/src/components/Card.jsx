@@ -1,18 +1,18 @@
 import React from "react";
 import Star from "../images/Star.png";
 
-export default function Card(props) {
+export default function Card({img, score, score2, lesson, price}) {
     return (
         <div className="Card">
-            <img id="PersonPic" src={props.img} alt="PersonPic"/>
+            <img id="PersonPic" src={img} alt="PersonPic"/>
             <div className="CardStats">
                 <img id="Star" src={Star} alt="Star" />
-                <span>{props.score}</span>
-                <span className="Gray">{props.score2}</span>
+                <span>{score}</span>
+                <span className="Gray">{score2}</span>
             </div>
-                <span>{props.lesson}</span>
+                <span>{lesson}</span>
                     <p className="Bold"> 
-                            {props.price}
+                            {price}
                         <span>
                             / person
                         </span>
