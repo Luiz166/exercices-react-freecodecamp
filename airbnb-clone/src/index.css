@@ -56,3 +56,32 @@ body{
   max-width: 30rem;
   width: 75%;
 }
+
+.Card{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.Card #PersonPic {
+  max-width: 15rem;
+  width: 15rem;
+}
+
+.Card #Star{
+  max-width: 1rem;
+}
+
+.CardStats{
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
+.CardStats .Gray{color: #918E9B;}
+.Card .Bold{font-weight: 800;}
+.Card .Bold span{font-weight: 400;}
+
+.CardContainer{
+  display: flex;
+}
