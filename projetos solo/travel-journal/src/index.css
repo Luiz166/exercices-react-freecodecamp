@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap');
+
+*{
+    font-size: 16px;
+    font-family: inter;
+}
+
+.Navbar{
+    background-color: #F55A5A;
+}
