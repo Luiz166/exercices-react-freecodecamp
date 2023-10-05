@@ -1,30 +1,30 @@
 import React from "react";
 import Star from "../images/Star.png";
 
-export default function Card({ img, score, score2, locale, lesson, price, openSpots }) {
+export default function Card({item}) {
     let BadgeText
-        if (openSpots === 0) {
+        if (item.openSpots === 0) {
             BadgeText = "SOLD OUT"
         }
-        else if (locale === "Online"){
+        else if (item.location === "Online"){
             BadgeText = "ONLINE"
         }
-        else if (openSpots > 0){
-            BadgeText = `${openSpots} AVALIABLES`
+        else if (item.openSpots > 0){
+            BadgeText = `${item.openSpots} AVALIABLES`
         }
 
     return (
         <div className="Card">
             {BadgeText && <div className="CardBadge">{BadgeText}</div>}
-            <img id="PersonPic" src={img} alt="PersonPic" />
+            <img id="PersonPic" src={item.coverImg} alt="PersonPic" />
             <div className="CardStats">
                 <img id="Star" src={Star} alt="Star" />
-                <span>{score}</span>
-                <span className="Gray">({score2}) • {locale}</span>
+                <span>{item.stats.rating}</span>
+                <span className="Gray">({item.stats.reviewCount}) • {item.location}</span>
             </div>
-            <span>{lesson}</span>
+            <span>{item.title}</span>
             <p className="Bold">
-                ${price}
+                ${item.price}
                 <span>
                     / person
                 </span>
