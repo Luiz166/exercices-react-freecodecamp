@@ -1,5 +1,3 @@
-import React from "react"
-
 export default [
     {
         id: 1,
@@ -8,7 +6,7 @@ export default [
         price: 136,
         coverImg: "https://www.athletespeakers.com/storage/celebrities/1627410490_Katie-Zaferes-Banner-1.jpg",
         stats: {
-            rating: 5.0,
+            rating: 5,
             reviewCount: 6
         },
         location: "Online",
